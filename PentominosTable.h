@@ -1,12 +1,15 @@
-#ifndef PENTOMINOSTABLE_H_
-#define PENTOMINOSTABLE_H_
+#ifndef PENTOMINOSTABLE_H
+#define PENTOMINOSTABLE_H
 
-#include <cairomm>
+#include <gtkmm/drawingarea.h>
 
-class PentominosTable : Gtk::Widget {
+class PentominosTable {
+private:
+	int w,h;
+	char* t;
 public:
-	PentominosTable();
+	PentominosTable(int width = 8, int height = 8);
 	virtual ~PentominosTable();
 };
 
-#endif /*PENTOMINOSTABLE_H_*/
+#endif /*PENTOMINOSTABLE_H*/

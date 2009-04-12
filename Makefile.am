@@ -17,7 +17,9 @@ AUTOMAKE_OPTIONS = foreign
 bin_PROGRAMS = pentominos
 pentominos_SOURCES = main.cpp \
                      mywindow.cpp \
-                     mywindow.h
+                     mywindow.h \
+					 PentominosTable.h PentominosTable.cpp \
+					 PentominosField.h PentominosField.cpp
 
 pentominos_LDADD = $(LIBHILDONMM_LIBS)
 pentominos_CXXFLAGS = $(LIBHILDONMM_CFLAGS)

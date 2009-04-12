@@ -20,7 +20,7 @@
  Name        : main.cpp
  Author      : MacGuru
  Version     : 0.1
- Description : CPP Hello Example
+ Description : Pentominos game
  ============================================================================
  */
 
@@ -38,12 +38,12 @@ int main(int argc, char *argv[])
 	Hildon::init();
 
 	/* Initialize libosso environment */
-	osso_context_t* osso_context = osso_initialize("helloworld", "1.0.0", TRUE, 0);
+	osso_context_t* osso_context = osso_initialize("pentominos", "0.1", TRUE, 0);
 	if(!osso_context)
 		std::cerr << "osso_initialize() failed." << std::endl;
 
 	/* Set the application name */
-	Glib::set_application_name("Hello World!!!");
+	Glib::set_application_name("Pentominos");
 
 	/* Create an object for the main Window and attach it to the program */
 	MyWindow window;
