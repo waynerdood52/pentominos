@@ -5,14 +5,16 @@ PentominosTable::PentominosTable(int width, int height) :
 	w(width),
 	h(height)
 {
-	int x,y;
-	t = new char[w][h];
-	for (x=0; x<w; x++) {
-		for (y=0; y<h; y++) {
-			t[x][y] = '0';
-		}
+	int i;
+	t = new char[w*h];
+	for (i=0; i<w*h; i++) {
+		t[i] = '0';
 	}
 }
 
 PentominosTable::~PentominosTable() {
+}
+
+char& PentominosTable::at(int x, int y) {
+	return t[y*w+x];
 }
