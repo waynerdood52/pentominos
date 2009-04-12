@@ -18,7 +18,7 @@ MyWindow::MyWindow() :
 
 	/* Attach the callback function to signal handler */
 	m_main_exit.signal_activate().connect(sigc::mem_fun(*this, &MyWindow::on_menu_quit));
-	m_main_about.signal_activate().connect(sigc::mem_fun(*this, &MyWindow::on_menu_helloworld));
+	m_main_about.signal_activate().connect(sigc::mem_fun(*this, &MyWindow::on_menu_about));
 
 	/* Make all menu widgets visible */
 	show_all();

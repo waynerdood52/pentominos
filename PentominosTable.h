@@ -4,10 +4,11 @@
 #include <gtkmm/drawingarea.h>
 
 class PentominosTable {
-private:
-	int w,h;
-	char* t;
 public:
+	int w,h;
+	char** t;
+		
+
 	PentominosTable(int width = 8, int height = 8);
 	virtual ~PentominosTable();
 };

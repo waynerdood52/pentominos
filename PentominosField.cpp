@@ -3,8 +3,8 @@
 
 PentominosField::PentominosField() {
 	#ifndef GLIBMM_DEFAULT_SIGNAL_HANDLERS_ENABLED
-		signal_size_request().connect(sigc::mem_fun(*this, &TTTArea::on_size_request));
-		signal_expose_event().connect(sigc::mem_fun(*this, &TTTArea::on_expose_event));
+		signal_size_request().connect(sigc::mem_fun(*this, &PentominosField::on_size_request));
+		signal_expose_event().connect(sigc::mem_fun(*this, &PentominosField::on_expose_event));
 	#endif
 }
 
