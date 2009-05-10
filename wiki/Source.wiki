@@ -3,7 +3,7 @@
 
 = Getting the source =
 
-You can get the compplete source code in one .tar.gz file on the download page, or by clicking [http://pentominos.googlecode.com/files/pentominos_0.1-1.tar.gz here].
+You can get the complete source code in one .tar.gz file on the download page, or by [http://pentominos.googlecode.com/files/pentominos_0.1-1.tar.gz clicking here].
 Although there are files in the SVN repository, you should ignore them due to their age.
 
 
