@@ -10,6 +10,8 @@ If you want to remve a pentomino from the table, you simply have to tap the icon
 
 *Tip:* You can switch to full-screen mode by pressing the button on the top-left edge of your tablet.
 
+*Tip:* You can access this information in the game by selecting Help from the application menu.
+
 
 = Tables =
 
