@@ -8,6 +8,8 @@ To place a pentomino onto the board, you have to mark 5 squares by tapping each 
 
 If you want to remve a pentomino from the table, you simply have to tap the icon of it on the right.
 
+*Tip:* You can switch to full-screen mode by pressing the button on the top-left edge of your tablet.
+
 
 = Tables =
 
