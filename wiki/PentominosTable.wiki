@@ -39,3 +39,8 @@ bool b;
 int vars[][8] = {{-1,1,0,1,1,1,0,2}};
 fxfy();
 b = isItCovered(vars, 1); //check for the purple plus
+}}}
+
+= Cell content =
+
+Each cell of the table is represented by a `char`. In the `'A'-'L'` interval, the cell holds a pentomino. Cells marked by `'0'` are empty (white) cells, `'S'` are the highlighted (gray) ones, and `'X'` represents a hole (black).
