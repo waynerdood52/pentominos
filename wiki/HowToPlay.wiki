@@ -1,0 +1,27 @@
+#summary Handling the user interface
+
+= Introduction =
+
+Pentominos is a board game where you have to fill the 12 pentomino (each consists of 5 squares) into the given board.
+
+To place a pentomino onto the board, you have to mark 5 squares by tapping each one, then tap the choosen pentomino on the right side. If you make a mistake, you can tap the marked square again to remove the selection. Each pentomino can be rotated and mirrored in any direction.
+
+If you want to remve a pentomino from the table, you simply have to tap the icon of it on the right.
+
+
+= Tables =
+
+You can play the game on various tables. You can select one in the Tables submenu in the menu of the game. Selecting a table automatically clears the actual game.
+
+The initial table consists of 8 by 8 squares, that means you will have 4 empty cells when you put down every pentomino. Riddles can be made by removing these from the table.
+
+Currently the following tables are included:
+  * 8x8 (4 quares will remain empty, here you can choose their location)
+  * 6x10 (18712 solutions)
+  * 5x12 (1010 solutions)
+  * 4x15 (368 solutions)
+  * 3x20 (2 solutions)
+  * Hole (8x8 without the 4 central squares)
+  * Corners (8x8 without the 4 square in the corners)
+  * Heart
+  * Crown
