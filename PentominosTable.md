@@ -1,0 +1,43 @@
+# Introduction #
+
+This class is used to handle tables for the game.
+
+# Functions #
+### Constructor ###
+```
+PentominosTable(int width = 8, int height = 8, const char* cont = NULL);
+```
+By default it creates a 8x8 empty table. If `cont` is provided, it must be an array of characters (not a null terminated string!) with a length of `width*height`. In this case, the content of the table is loaded from this parameter.
+
+**Examples:**
+```
+PentominosTable t1;
+PentominosTable t2(20, 3);
+PentominosTable t3(8, 8, "000000000000000000000000000XX000000XX000000000000000000000000000"); //For the 'Hole' table
+```
+
+### Asking for cell with X,Y coordinates ###
+```
+char& at(int x, int y);
+```
+
+### Testing pentomino selections ###
+```
+void fxfy();
+bool isItCovered(int vars[][8], int varcount);
+```
+`fxfy()` must be called before any `isItCovered()` call happens. This functions stores the topmost-lefmost selected cell on the table.
+
+`isItCovered()` is used to determine if the selection is a specific pentomino. The `vars` is an array of int arrays that stores relative coordinates to the cell found by `fxfy()`. `varcount` is the first dimension of the array.
+
+**Examples:**
+```
+bool b;
+int vars[][8] = {{-1,1,0,1,1,1,0,2}};
+fxfy();
+b = isItCovered(vars, 1); //check for the purple plus
+```
+
+# Cell content #
+
+Each cell of the table is represented by a `char`. In the `'A'-'L'` interval, the cell holds a pentomino. Cells marked by `'0'` are empty (white) cells, `'S'` are the highlighted (gray) ones, and `'X'` represents a hole (black).

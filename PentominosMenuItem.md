@@ -1,0 +1,9 @@
+# Introduction #
+This is a subclass of `Gtk::MenuItem`, so it can be used in the application menu. This class handles the activation event in itself, only the constructor must be called once, in the `MyWindow.buildTablesMenu()` function.
+
+# Functions #
+### Constructor ###
+```
+PentominosMenuItem(PentominosField& field, const Glib::ustring& label, const int width, const int height, const char* content= NULL);
+```
+The class constructor is roughly the merge of the `Gtk::MenuItem` and the [PentominosTable](PentominosTable.md) constructors. `filed` is a reference to the `pfield` PentominosField of the main window. The second parameter will be the label of the menuitem, and the remaining parameters are passed to the constructor of PentominosTable on activation.

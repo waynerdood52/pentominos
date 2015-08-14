@@ -1,0 +1,19 @@
+# Getting the source #
+
+You can get the complete source code in one .tar.gz file on the download page, or by [clicking here](http://pentominos.googlecode.com/files/pentominos_0.1-1.tar.gz).
+Although there are files in the SVN repository, you should ignore them due to their age.
+
+
+# IDE #
+
+This project is made with Eclipse and ESbox v2, testing in Scratchbox v1. Automake is used during the build process.
+
+
+# Classes #
+
+The program is made up by the following classes, each described in the respective files:
+  * [MyWindow](MyWindow.md)
+  * [PentominosTable](PentominosTable.md)
+  * [PentominosMenuItem](PentominosMenuItem.md)
+  * [PentominosButton](PentominosButton.md)
+  * [PentominosField](PentominosField.md)

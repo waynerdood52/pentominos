@@ -1,0 +1,2 @@
+# Introduction #
+The representations of this class are the 12 button on the right side of the screen. It stores the state of the element (if it is on the table, or not) and provides a function for the [PentominosField](PentominosField.md) that draws the button to given coordinates within a `Cairo::Context`.
